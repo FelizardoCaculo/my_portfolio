@@ -186,6 +186,10 @@ button {
     transition: .4s;
 }
 
+button a{
+    text-decoration: none;
+}
+
 button:hover {
     background-color: transparent;
     border: 2px solid var(--pink-btn-links);
