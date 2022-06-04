@@ -1,0 +1,10 @@
+version: '20.10.12'
+
+services:
+  app:
+    build: .
+    command: npm start
+    ports:
+      - "5500:5500"
+    volumes:
+      - .:/usr/app
