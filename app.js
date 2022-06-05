@@ -10,6 +10,6 @@ router.get('/', (req, res)=>{
 app.use(router);
 app.use(express.static(__dirname + '/src/assets'));
 
-app.listen(process.env.PORT || 5500, ()=>{
-    console.log('SERVIDOR RODANDO PORTA 5500!!!!')
+app.listen(process.env.PORT || 3000, ()=>{
+    console.log('SERVIDOR RODANDO!!!!')
 });

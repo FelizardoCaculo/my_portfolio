@@ -12,6 +12,11 @@
     --pink-btn-links: #f9004d;
 }
 
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 /*------------------ Home Section Starts ----------------- */
 
 .home {
@@ -89,45 +94,12 @@ h4 {
     font-size: 20px;
 }
 
-.newslatter form {
-    width: 380px;
-    max-width: 100%;
-    position: relative;
-}
-
-.newslatter form input:first-child {
-    display: inline-block;
-    width: 100%;
-    padding: 14px 130px 14px 15px;
-    border: 2px solid var(--pink-btn-links);
-    outline: none;
-    border-radius: 30px;
-}
-
-.newslatter form input:last-child {
-    position: absolute;
-    display: inline-block;
-    outline: none;
-    border: none;
-    padding: 10px 30px;
-    border-radius: 30px;
-    background-color: var(--pink-btn-links);
-    box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
-    top: 6px; /*to center the button*/
-    right: 6px;/*Put inside the first input*/
-}
-
 img {
     border-radius: 25%;
     margin-right: 2px;
 }
 
 /*------------------ /Home Section Ends ----------------- */
-
-
-
-
-
 
 /*----------------- About Section Starts ---------------- */
 .about {
@@ -186,39 +158,26 @@ button {
     transition: .4s;
 }
 
-button a{
-    text-decoration: none;
-}
-
 button:hover {
     background-color: transparent;
     border: 2px solid var(--pink-btn-links);
     cursor: pointer;
 }
-
-
-
 /*----------------- About Section Ends ---------------- */
 
-
-
-
-
 /*------------- Projects Section Starts --------------- */
-
-
 .projects {
     background-color: var(--blue-bg);
     width: 100%;
-    height: 100vh;
-    padding: 30px;
+    height: 100%;
+    padding: 5px;
 }
 
 .title h2 {
     color: white;
     font-size: 75px;
-    width: 1130px;
-    margin: 10px auto;
+    width: 100%;
+    margin: 20px 0 0 0;
     text-align: center;
 }
 
@@ -226,17 +185,15 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 400px;
 }
 
 .card {
-    height: 365px;
+    height: 400px;
     width: 350px;
-    padding: 20px 35px;
+    padding: 5px 5px;
     border-radius: 20px;
-    margin: 15px;
+    margin: 5px;
     position: relative;
-    overflow: hidden;
     text-align: center;
 }
 
@@ -270,15 +227,9 @@ h5 {
     border: 2px solid var(--pink-btn-links);
     cursor: pointer;
 }
-
 /*------------- Projects Section Ends --------------- */
 
-
-
-
-
 /*------------- Contact Me Section Starts --------------- */
-
 .contact-me {
     width: 100%;
     height: 50vh;
@@ -315,9 +266,6 @@ h5 {
 
 
 /*------------- /Contact Me Section Ends --------------- */
-
-
-
 
 /*------------- Footer Starts --------------- */
 
@@ -376,3 +324,429 @@ footer p:nth-child(2) {
 }
 
 /*------------- /Footer Ends --------------- */
+
+
+
+/*------------- Media Queries --------------*/
+
+@media(max-width:718px) {
+    /*------------------ Home Section Starts ----------------- */
+
+.home {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--blue-bg)
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-left: 4%;
+    padding-right: 4%;    
+}
+
+.logo {
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+nav ul li {
+    padding: 3px 5px;
+}
+
+.content{
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+h1 {
+    color: white;
+    margin: 50px 0px 5px;
+    font-size: 40px;
+}
+
+h3 {
+    color: white;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+h4 {
+    color: #fcfc;
+    letter-spacing: 1px;
+    font-size: 13px;
+}
+
+img {
+    border-radius: 25%;
+    margin-right: 2px;
+    width: 200px;
+}
+
+/*------------------ /Home Section Ends ----------------- */
+
+/*----------------- About Section Starts ---------------- */
+.about {
+    width: 100%;
+    height: 100%;
+    padding: 100px auto;
+    background-color: var(--purple-bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about img {
+    margin-left: 3px;
+    width: 200px;
+}
+
+.about-text {
+    margin-left: 20px;
+    width: 400px;
+}
+
+.about-text h2 {
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-bottom: 50px;
+}
+
+.about-text h5 {
+    letter-spacing: 1px;
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.about-text p {
+    color: #fcfc;
+    letter-spacing: 1px;
+    line-height: 15px;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+button {
+    background-color: var(--pink-btn-links);
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: -30%;
+}
+/*----------------- About Section Ends ---------------- */
+
+/*------------- Projects Section Starts --------------- */
+.projects {
+    background-color: var(--blue-bg);
+    width: 100%;
+    height: 150%;
+    padding: 10px;
+}
+
+.title h2 {
+    color: white;
+    font-size: 40px;
+    width: 100%;
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    height: 300px;
+    width: 200px;
+    padding: 2px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+h5 {
+    color: var(--pink-btn-links);
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.pra {
+    color: #fcfc;
+    font-size: 14px;
+    line-height: 15px;
+    margin-bottom: 5px;
+}
+
+.card .button {
+    margin-top: 30px;
+    background-color: var(--pink-btn-links);
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 7px 18px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+/*------------- Projects Section Ends --------------- */
+
+/*------------- Contact Me Section Starts --------------- */
+.contact-me {
+    width: 100%;
+    height: 50vh;
+    background-color: var(--purple-bg);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-me p {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.contact-me .button-two {
+    background-color: var(--pink-btn-links);
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 20px;
+    border-radius: 30px;
+    transition: .4s;
+}
+/*------------- /Contact Me Section Ends --------------- */
+
+/*------------- Footer Starts --------------- */
+footer {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background-color: var(--blue-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p:nth-child(1) {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+footer p:nth-child(2) {
+    color: white;
+    font-size: 14px;
+    width: 300px;
+    text-align: center;
+    line-height: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.social {
+    display: flex;
+}
+
+.social a {
+    height: 45px;
+    display: flex;
+    align-items: center;
+    background: var(--pink-btn-links);
+    border-radius: 25%;
+    margin: 15px 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.social a:hover {
+    transform: scale(1.3);
+    transition: .3s;
+}
+
+.end {
+    position: absolute;
+    color: var(--pink-btn-links);
+    bottom: 35px;
+    font-size: 14px;
+}
+/*------------- /Footer Ends --------------- */   
+}
+
+@media(max-width: 400px) {
+    .home {
+        height: 120vh;
+        width: 100%;
+        background-color: var(--blue-bg)
+    }
+    
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 25px;
+        text-align: center;    
+    }
+    
+    .logo {
+        font-size: 25px;
+        letter-spacing: 1px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding-left: 30%;
+    }
+    
+    nav ul li {
+        padding: 3px 5px;
+        display: flex;
+        text-align: center;
+    }
+    
+    .content{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    h1 {
+        color: white;
+        margin: 50px 0px 5px;
+        font-size: 25px;
+    }
+    
+    h3 {
+        color: white;
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    
+    h4 {
+        color: #fcfc;
+        letter-spacing: 1px;
+        font-size: 13px;
+    }
+    
+    img {
+        border-radius: 25%;
+        margin-right: 2px;
+        width: 200px;
+    }
+    
+    /*------------------ /Home Section Ends ----------------- */
+    
+    /*----------------- About Section Starts ---------------- */
+    .about {
+        width: 100%;
+        height: 100%;
+        padding: 100px auto;
+        background-color: var(--purple-bg);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .about img {
+        margin-left: 3px;
+        width: 200px;
+        align-items: center;
+    }
+    
+    .about-text {
+        margin: 0;
+        width: 400px;
+        text-align: center;
+    }
+    
+    .about-text h2 {
+        font-size: 50px;
+        text-transform: capitalize;
+        margin-bottom: 50px;
+    }
+    
+    .about-text h5 {
+        letter-spacing: 1px;
+        font-size: 25px;
+        margin-bottom: 10px;
+        text-transform: capitalize;
+    }
+    
+    .about-text p {
+        color: #fcfc;
+        letter-spacing: 1px;
+        line-height: 15px;
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+    
+    button {
+        background-color: var(--pink-btn-links);
+        color: white;
+        text-decoration: none;
+        border: 2px solid transparent;
+        font-weight: bold;
+        padding: 13px 30px;
+        border-radius: 30px;
+        transition: .4s;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-left: -10%;
+    }
+    /*----------------- About Section Ends ---------------- */
+    
+    /*------------- Contact Me Section Starts --------------- */
+    .contact-me {
+        width: 100%;
+        height: 50vh;
+        background-color: var(--purple-bg);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .contact-me p {
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+    
+    .contact-me .button-two {
+        background-color: var(--pink-btn-links);
+        color: white;
+        text-decoration: none;
+        border: 2px solid transparent;
+        font-weight: bold;
+        padding: 9px 20px;
+        border-radius: 30px;
+        transition: .4s;
+    }
+    /*------------- /Contact Me Section Ends --------------- */
+}
