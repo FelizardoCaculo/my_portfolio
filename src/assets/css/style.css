@@ -702,3 +702,164 @@ footer p:nth-child(2) {
     }
     /*------------- /Contact Me Section Ends --------------- */
 }
+
+
+/**
+@media(max-width: 520px) {
+    .home {
+        height: 120vh;
+        width: 100%;
+        background-color: var(--blue-bg)
+    }
+    
+    nav {
+        display:grid;
+        grid-template-rows: 1fr;
+        align-items: center;
+        justify-content: center;
+        padding-top: 50px;
+        text-align: center;    
+    }
+    
+    .logo {
+        display: flex;
+        font-size: 25px;
+        letter-spacing: 1px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    nav ul li {
+        padding: 3px 5px;
+        display: inline-flex;
+        text-align: center;
+        align-items: center;
+    }
+
+    nav ul li a {
+        display: inline-flex;
+    }
+    
+    .content{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    h1 {
+        color: white;
+        margin: 20px;
+        font-size: 25px;
+    }
+    
+    h3 {
+        color: white;
+        font-size: 15px;
+        margin-bottom: 0;
+    }
+    
+    h4 {
+        color: #fcfc;
+        letter-spacing: 1px;
+        font-size: 13px;
+    }
+    
+    img {
+        border-radius: 25%;
+        margin-right: 2px;
+        width: 200px;
+    }
+    
+    /*------------------ /Home Section Ends ----------------- */
+    
+    /*----------------- About Section Starts ---------------- */
+    .about {
+        width: 100%;
+        height: 100%;
+        padding: 100px auto;
+        background-color: var(--purple-bg);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .about-text {
+        margin: 0;
+        width: 400px;
+        text-align: center;
+    }
+    
+    .about-text h2 {
+        font-size: 50px;
+        text-transform: capitalize;
+        margin-bottom: 50px;
+    }
+    
+    .about-text h5 {
+        letter-spacing: 1px;
+        font-size: 25px;
+        margin-bottom: 10px;
+        text-transform: capitalize;
+    }
+    
+    .about-text p {
+        color: #fcfc;
+        letter-spacing: 1px;
+        line-height: 15px;
+        font-size: 14px;
+        margin-bottom: 30px;
+        margin: 5px;
+    }
+    
+    button {
+        background-color: var(--pink-btn-links);
+        color: white;
+        text-decoration: none;
+        border: 2px solid transparent;
+        font-weight: bold;
+        padding: 13px 30px;
+        border-radius: 30px;
+        transition: .4s;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-left: -10%;
+    }
+    /*----------------- About Section Ends ---------------- */
+    
+    /*------------- Contact Me Section Starts --------------- */
+    .contact-me {
+        width: 100%;
+        height: 50vh;
+        background-color: var(--purple-bg);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .contact-me p {
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+    
+    .contact-me .button-two {
+        background-color: var(--pink-btn-links);
+        color: white;
+        text-decoration: none;
+        border: 2px solid transparent;
+        font-weight: bold;
+        padding: 9px 20px;
+        border-radius: 30px;
+        transition: .4s;
+    }
+    /*------------- /Contact Me Section Ends --------------- */
+}
