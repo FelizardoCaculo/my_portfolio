@@ -19,7 +19,7 @@ body {
 
 /*------------------ Home Section Starts ----------------- */
 
-.home {
+#home {
     height: 100vh;
     width: 100%;
     background-color: var(--blue-bg)
@@ -29,9 +29,9 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 35px;
-    padding-left: 8%;
-    padding-right: 8%;    
+    padding-top: 20px;
+    padding-left: 4%;
+    padding-right: 2%;    
 }
 
 .logo {
@@ -48,7 +48,7 @@ span {
 nav ul li {
     list-style-type: none;
     display: inline-block;
-    padding: 10px 25px;
+    padding: 8px 5px;
 }
 
 nav ul li a {
@@ -70,16 +70,16 @@ nav ul li a:hover {
     width: 100%;
     height: 100vh;
     align-items: center;
-    justify-content: space-between;
-    padding-left: 8%;
-    padding-right: 8%;
+    justify-content: space-around;
+    padding-left: 4%;
+    padding-right: 4%;
 
 }
 
 h1 {
     color: white;
     margin: 20px 0px 20px;
-    font-size: 75px;
+    font-size: 60px;
 }
 
 h3 {
@@ -95,41 +95,35 @@ h4 {
 }
 
 img {
-    border-radius: 25%;
+    border-radius: 20%;
     margin-right: 2px;
+    width: 250px;
 }
 
 /*------------------ /Home Section Ends ----------------- */
 
 /*----------------- About Section Starts ---------------- */
-.about {
+#about {
     width: 100%;
     height: 105vh;
-    padding: 100px 0px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     background-color: var(--purple-bg);
-    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
-}
-
-.about img {
-    margin-left: 2px;
-}
-
-.main {
-    width: 1130px;
-    max-width: 95%;
-}
+    padding-left: 4%;
+    padding-right: 4%;
+    }
 
 .about-text {
     width: 550px;
 }
 
 .about-text h2 {
-    font-size: 75px;
+    font-size: 60px;
     text-transform: capitalize;
-    margin-bottom: 20px;
+    margin-bottom: 20px 0 0 0;
 }
 
 .about-text h5 {
@@ -145,28 +139,12 @@ img {
     line-height: 28px;
     font-size: 18px;
     margin-bottom: 45px;
-}
-
-button {
-    background-color: var(--pink-btn-links);
-    color: white;
-    text-decoration: none;
-    border: 2px solid transparent;
-    font-weight: bold;
-    padding: 13px 30px;
-    border-radius: 30px;
-    transition: .4s;
-}
-
-button:hover {
-    background-color: transparent;
-    border: 2px solid var(--pink-btn-links);
-    cursor: pointer;
+    margin-right: 10px;
 }
 /*----------------- About Section Ends ---------------- */
 
 /*------------- Projects Section Starts --------------- */
-.projects {
+#projects {
     background-color: var(--blue-bg);
     width: 100%;
     height: 100%;
@@ -175,9 +153,9 @@ button:hover {
 
 .title h2 {
     color: white;
-    font-size: 75px;
+    font-size: 60px;
     width: 100%;
-    margin: 20px 0 0 0;
+    margin: 20px;
     text-align: center;
 }
 
@@ -230,7 +208,7 @@ h5 {
 /*------------- Projects Section Ends --------------- */
 
 /*------------- Contact Me Section Starts --------------- */
-.contact-me {
+#contact-me {
     width: 100%;
     height: 50vh;
     background-color: var(--purple-bg);
@@ -240,14 +218,14 @@ h5 {
     justify-content: center;
 }
 
-.contact-me p {
+#contact-me p {
     color: white;
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 25px;
 }
 
-.contact-me .button-two {
+#contact-me .button-two {
     background-color: var(--pink-btn-links);
     color: white;
     text-decoration: none;
@@ -258,7 +236,7 @@ h5 {
     transition: .4s;
 }
 
-.contact-me .button-two:hover {
+#contact-me .button-two:hover {
     background-color: transparent;
     border: 2px solid var(--pink-btn-links);
     cursor: pointer;
@@ -329,8 +307,8 @@ footer p:nth-child(2) {
 
 /*------------- Media Queries --------------*/
 
-@media(max-width:718px) {
-    /*------------------ Home Section Starts ----------------- */
+@media(max-width:800px) {
+/*------------------ Home Section Starts ----------------- */
 
 .home {
     height: 100vh;
@@ -339,12 +317,12 @@ footer p:nth-child(2) {
 }
 
 nav {
-    display: flex;
+    display:grid;
+    grid-template-rows: 1fr;
     align-items: center;
-    justify-content: space-between;
-    padding-top: 25px;
-    padding-left: 4%;
-    padding-right: 4%;    
+    justify-content: center;
+    padding-top: 50px;
+    text-align: center;    
 }
 
 .logo {
@@ -380,8 +358,7 @@ h4 {
 }
 
 img {
-    border-radius: 25%;
-    margin-right: 2px;
+    margin: 10px;
     width: 200px;
 }
 
@@ -391,16 +368,6 @@ img {
 .about {
     width: 100%;
     height: 100%;
-    padding: 100px auto;
-    background-color: var(--purple-bg);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.about img {
-    margin-left: 3px;
-    width: 200px;
 }
 
 .about-text {
@@ -427,21 +394,6 @@ img {
     line-height: 15px;
     font-size: 14px;
     margin-bottom: 30px;
-}
-
-button {
-    background-color: var(--pink-btn-links);
-    color: white;
-    text-decoration: none;
-    border: 2px solid transparent;
-    font-weight: bold;
-    padding: 13px 30px;
-    border-radius: 30px;
-    transition: .4s;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    margin-left: -30%;
 }
 /*----------------- About Section Ends ---------------- */
 
@@ -592,7 +544,7 @@ footer p:nth-child(2) {
 /*------------- /Footer Ends --------------- */   
 }
 
-@media(max-width: 400px) {
+@media(max-width: 700px) {
     .home {
         height: 120vh;
         width: 100%;
@@ -600,27 +552,32 @@ footer p:nth-child(2) {
     }
     
     nav {
-        display: flex;
-        flex-wrap: wrap;
+        display:grid;
+        grid-template-rows: 1fr;
         align-items: center;
-        justify-content: space-between;
-        padding-top: 25px;
+        justify-content: center;
+        padding-top: 50px;
         text-align: center;    
     }
     
     .logo {
+        display: flex;
         font-size: 25px;
         letter-spacing: 1px;
         text-align: center;
         justify-content: center;
         align-items: center;
-        padding-left: 30%;
     }
     
     nav ul li {
         padding: 3px 5px;
-        display: flex;
+        display: inline-flex;
         text-align: center;
+        align-items: center;
+    }
+
+    nav ul li a {
+        display: inline-flex;
     }
     
     .content{
@@ -633,14 +590,14 @@ footer p:nth-child(2) {
     
     h1 {
         color: white;
-        margin: 50px 0px 5px;
+        margin: 20px;
         font-size: 25px;
     }
     
     h3 {
         color: white;
         font-size: 15px;
-        margin-bottom: 5px;
+        margin-bottom: 0;
     }
     
     h4 {
@@ -669,12 +626,6 @@ footer p:nth-child(2) {
         justify-content: center;
     }
     
-    .about img {
-        margin-left: 3px;
-        width: 200px;
-        align-items: center;
-    }
-    
     .about-text {
         margin: 0;
         width: 400px;
@@ -700,6 +651,7 @@ footer p:nth-child(2) {
         line-height: 15px;
         font-size: 14px;
         margin-bottom: 30px;
+        margin: 5px;
     }
     
     button {
