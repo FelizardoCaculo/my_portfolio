@@ -15,23 +15,27 @@
 body {
     width: 100%;
     overflow-x: hidden;
+    background-color: beige ;
 }
 
-/*------------------ Home Section Starts ----------------- */
+/*---------- Header------------ */
+.header {
+    width: 70%;
+    max-width: 800px;
+    background-color: var(--blue-bg);
+    margin: auto    ;
+}
 
-#home {
-    height: 100vh;
+.header .navbar {
     width: 100%;
-    background-color: var(--blue-bg)
-}
-
-nav {
+    max-width: 800px;
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
+    margin: auto;
     padding-top: 20px;
     padding-left: 4%;
-    padding-right: 2%;    
+    padding-right: 2%;
 }
 
 .logo {
@@ -45,41 +49,57 @@ span {
     color: var(--pink-btn-links);
 }
 
-nav ul li {
+.navbar ul li {
     list-style-type: none;
     display: inline-block;
     padding: 8px 5px;
 }
 
-nav ul li a {
+.navbar ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
     text-transform: capitalize;
 }
 
-nav ul li a:hover {
+.navbar ul li a:hover {
     color: var(--pink-btn-links);
     transition: .4s;
+}
+
+#container {
+    width: 70%;
+    max-width: 800px;
+    margin: auto;
+    align-items: center;
+}
+
+
+/*-------------- Home Section ------------- */
+#home {
+    display: flex;
+    flex-wrap: wrap;
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--blue-bg);
 }
 
 
 .content{
     display: flex;
+    flex-wrap: wrap;
     position: absolute;
-    width: 100%;
-    height: 100vh;
+    width: 70%;
+    height:auto;
     align-items: center;
-    justify-content: space-around;
-    padding-left: 4%;
-    padding-right: 4%;
-
+    justify-content: center;
 }
 
 h1 {
     color: white;
     margin: 20px 0px 20px;
-    font-size: 60px;
+    font-size: 50px;
 }
 
 h3 {
@@ -100,21 +120,20 @@ img {
     width: 250px;
 }
 
-/*------------------ /Home Section Ends ----------------- */
 
-/*----------------- About Section Starts ---------------- */
+/*------------ About Section ------------ */
 #about {
     width: 100%;
-    height: 105vh;
-    padding-top: 1rem;
+    height: 85vh;
+    padding-top: 15%;
     padding-bottom: 5rem;
     background-color: var(--purple-bg);
     display: flex;
     position: relative;
     align-items: center;
     justify-content: space-between;
-    padding-left: 12%;
-    padding-right: 12%;
+    padding-left: 8%;
+    padding-right: 8%;
     }
 
 .about-text h2 {
@@ -207,7 +226,7 @@ h5 {
 /*------------- Contact Me Section Starts --------------- */
 #contact-me {
     width: 100%;
-    height: 50vh;
+    height: 30vh;
     background-color: var(--purple-bg);
     display: flex;
     align-items: center;
@@ -249,8 +268,11 @@ h5 {
 
 footer {
     position: relative;
-    width: 100%;
-    height: 50vh;
+    width: 70%;
+    max-width: 800px;
+    margin: auto;
+    align-items: center;
+    height: 45vh;
     background-color: var(--blue-bg);
     display: flex;
     flex-wrap: wrap;
