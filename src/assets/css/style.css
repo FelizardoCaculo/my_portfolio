@@ -3,35 +3,36 @@
     margin: 0;
     font-family: 'Josefin Sans', sans-serif;
     box-sizing: border-box;
-    color:beige;
+    color: white;
 }
 
 :root {
     --blue-bg: #160863;
-    --purple-bg: #322150;
+    --purple-bg: #35038b;
     --pink-btn-links: #f9004d;
 }
 
 body {
     width: 100%;
-    overflow-x: hidden;
+    background-color: beige;
 }
 
-/*------------------ Home Section Starts ----------------- */
-
-#home {
-    height: 100vh;
-    width: 100%;
-    background-color: var(--blue-bg)
+/*---------- Header------------ */
+.header {
+    width: min(90vw, 800px);
+    margin: auto;
+    background-color: var(--blue-bg);
 }
 
-nav {
+.header .navbar {
+    width: min(90vw, 800px);
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
+    margin: 0 auto;
     padding-top: 20px;
     padding-left: 4%;
-    padding-right: 2%;    
+    padding-right: 2%;
 }
 
 .logo {
@@ -45,46 +46,59 @@ span {
     color: var(--pink-btn-links);
 }
 
-nav ul li {
+.navbar ul li {
     list-style-type: none;
     display: inline-block;
     padding: 8px 5px;
 }
 
-nav ul li a {
+.navbar ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
     text-transform: capitalize;
 }
 
-nav ul li a:hover {
+.navbar ul li a:hover {
     color: var(--pink-btn-links);
     transition: .4s;
 }
 
+#container {
+    width: min(90vw, 800px);
+    margin: auto;
+}
+
+
+/*-------------- Home Section ------------- */
+#home {
+    display: flex;
+    flex-wrap: wrap;
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--blue-bg);
+}
 
 .content{
     display: flex;
+    flex-wrap: wrap;
     position: absolute;
-    width: 100%;
-    height: 100vh;
+    width: 70%;
+    height:auto;
     align-items: center;
-    justify-content: space-around;
-    padding-left: 4%;
-    padding-right: 4%;
-
+    justify-content: center;
 }
 
 h1 {
     color: white;
-    margin: 20px 0px 20px;
-    font-size: 60px;
+    margin: 10px 0px 10px;
+    font-size: 30px;
 }
 
 h3 {
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 50px;
 }
 
@@ -96,103 +110,86 @@ h4 {
 
 img {
     border-radius: 20%;
-    margin: 2rem;
-    width: 250px;
+    margin: 20px;
+    width: 120px;
+    align-items: center;
 }
 
-/*------------------ /Home Section Ends ----------------- */
-
-/*----------------- About Section Starts ---------------- */
+/*------------ About Section ------------ */
 #about {
-    width: 100%;
-    height: 105vh;
-    padding-top: 1rem;
-    padding-bottom: 5rem;
     background-color: var(--purple-bg);
     display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 12%;
-    padding-right: 12%;
-    }
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
 
 .about-text h2 {
-    font-size: 50px;
-    text-transform: capitalize;
-    margin-bottom: 1rem;
+    font-size: 45px;
+    margin-top: 10px;
 }
 
 .about-text h5 {
-    letter-spacing: 2px;
-    font-size: 16px;
-    margin-bottom: 1rem;
-    text-transform: capitalize;
+    margin-top: 30px;
+    font-size: 30px;
 }
 
 .about-text p {
-    display: flex;
-    color: #fcfc;
-    line-height: 25px;
-    font-size: 20px;
-    margin-bottom: 5rem;
-    margin-right: 2rem
+    margin: 30px;
+    text-align: justify;
 }
 /*----------------- About Section Ends ---------------- */
 
 /*------------- Projects Section Starts --------------- */
 #projects {
+    height: 180vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
     background-color: var(--blue-bg);
-    width: 100%;
-    height: 100%;
-    padding: 5px;
+    margin: 0;
+    padding: 0;
 }
 
-.title h2 {
+.title {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+h2 {
     color: white;
-    font-size: 60px;
+    font-size: 45px;
     width: 100%;
-    margin: 20px;
     text-align: center;
 }
 
 .box {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-}
-
-.card {
-    height: 400px;
-    width: 350px;
-    padding: 5px 5px;
-    border-radius: 20px;
-    margin: 5px;
-    position: relative;
     text-align: center;
 }
 
-h5 {
-    color: var(--pink-btn-links);
-    font-size: 23px;
-    margin-bottom: 15px;
-}
-
-.pra {
-    color: #fcfc;
-    font-size: 16px;
-    line-height: 20px;
-    margin-bottom: 40px;
+.card {
+    width: 90%;
+    height: 50vh;
+    border-radius: 20px;
+    margin-top: 20px;
+    position: relative;
+    text-align: center;
+    border: 2px solid;
+    padding: 1rem;
 }
 
 .card .button {
-    margin-top: 20px;
+    margin-top: 30px;
     background-color: var(--pink-btn-links);
     color: white;
     text-decoration: none;
-    border: 2px solid transparent;
     font-weight: bold;
-    padding: 9px 22px;
+    padding: 6px 14px;
     border-radius: 30px;
     transition: .4s;
 }
@@ -202,12 +199,28 @@ h5 {
     border: 2px solid var(--pink-btn-links);
     cursor: pointer;
 }
+
+.card h5 {
+    color: var(--pink-btn-links);
+    font-size: 25px;
+    margin: 10px auto;
+}
+
+.pra {
+    color: #fcfc;
+    font-size: 16x;
+    line-height: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+    height: fit-content;
+}
+
 /*------------- Projects Section Ends --------------- */
 
 /*------------- Contact Me Section Starts --------------- */
 #contact-me {
     width: 100%;
-    height: 50vh;
+    height: 25vh;
     background-color: var(--purple-bg);
     display: flex;
     align-items: center;
@@ -217,9 +230,9 @@ h5 {
 
 #contact-me p {
     color: white;
-    font-size: 2rem;
+    font-size: 30px;
     font-weight: bold;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
@@ -231,7 +244,7 @@ h5 {
     text-decoration: none;
     border: 2px solid transparent;
     font-weight: bold;
-    padding: 13px 30px;
+    padding: 10px 15px;
     border-radius: 30px;
     transition: .4s;
 }
@@ -249,45 +262,42 @@ h5 {
 
 footer {
     position: relative;
-    width: 100%;
-    height: 50vh;
+    width: min(90vw, 800px);
+    margin: auto;
+    align-items: center;
+    height: 45vh;
     background-color: var(--blue-bg);
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
 }
 
 footer p:nth-child(1) {
-    font-size: 2rem;
+    font-size: 25px;
     color: white;
-    margin-bottom: 20px;
+    margin: 10px;
     font-weight: bold;
-}
-
-footer p:nth-child(2) {
-    color: white;
-    font-size: 17px;
-    width: 500px;
     text-align: center;
-    line-height: 26px;
 }
 
 .social {
-    display: flex;
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    row-gap: 10px;
+    justify-content: center;
+    text-align: center;
 }
 
 .social a {
-    height: 45px;
-    display: flex;
-    align-items: center;
+    height: 20px;
     background: var(--pink-btn-links);
     border-radius: 25%;
-    margin: 22px 10px;
+    margin: 0;
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .social a:hover {
@@ -296,462 +306,185 @@ footer p:nth-child(2) {
 }
 
 .end {
-    position: absolute;
-    color: var(--pink-btn-links);
-    bottom: 35px;
-    font-size: 14px;
+    display: flex;
 }
 
-/*------------- /Footer Ends --------------- */
-
+.end p:nth-child(1) {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--pink-btn-links);
+}
 
 
 /*------------- Media Queries --------------*/
+/*------------- Media Queries --------------*/
 
-@media(max-width:800px) {
-/*------------------ Home Section Starts ----------------- */
-
-#home {
-    height: 100vh;
-    width: 100%;
-    background-color: var(--blue-bg)
-    
-}
-
-nav {
-    display:grid;
-    grid-template-rows: 1fr;
-    align-items: center;
-    justify-content: center;
-    padding-top: 50px;
-    text-align: center;    
-}
-
-.logo {
-    font-size: 25px;
-    letter-spacing: 1px;
-}
-
-nav ul li {
-    padding: 3px 5px;
-}
-
-.content{
-    padding-left: 4%;
-    padding-right: 4%;
-    display:grid;
-    grid-template-rows: 1fr;
-    align-items: center;
-    justify-content: center;
-    padding-top: 50px;
-    text-align: center;
-    padding-bottom: 5rem;
-}
-
-h1 {
-    color: white;
-    margin: 50px 0px 5px;
-    font-size: 40px;
-}
-
-h3 {
-    color: white;
-    font-size: 15px;
-    margin-bottom: 20px;
-}
-
-h4 {
-    color: #fcfc;
-    letter-spacing: 1px;
-    font-size: 13px;
-}
-
-img {
-    margin: 10px;
-    width: 200px;
-}
-
-/*------------------ /Home Section Ends ----------------- */
-
-/*----------------- About Section Starts ---------------- */
-#about {
-    width: 100%;
-    height: 120vh;
-    padding-top: 1rem;
-    padding-bottom: 5rem;
-    background-color: var(--purple-bg);
-    display:flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    }
-
-.about-text {
-    margin-left: 20px;
-    width: 400px;
-}
-
-.about-text h2 {
-    font-size: 30px;
-    text-transform: capitalize;
-    margin-bottom: 20px;
-}
-
-.about-text h5 {
-    letter-spacing: 1px;
-    font-size: 25px;
-    margin-bottom: 5px;
-    text-transform: capitalize;
-}
-
-.about-text p {
-    color: #fcfc;
-    letter-spacing: 1px;
-    line-height: 20px;
-    font-size: 20px;
-    margin-bottom: 30px;
-}
-/*----------------- About Section Ends ---------------- */
-
-/*------------- Projects Section Starts --------------- */
-.projects {
-    background-color: var(--blue-bg);
-    width: 100%;
-    height: 150%;
-    padding: 10px;
-}
-
-.title h2 {
-    color: white;
-    font-size: 40px;
-    width: 100%;
-    margin: 10px 0 0 0;
-    text-align: center;
-}
-
-.box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.card {
-    height: 300px;
-    width: 200px;
-    padding: 2px;
-    border-radius: 20px;
-    text-align: center;
-}
-
-h5 {
-    color: var(--pink-btn-links);
-    font-size: 20px;
-    margin-bottom: 15px;
-}
-
-.pra {
-    color: #fcfc;
-    font-size: 14px;
-    line-height: 15px;
-    margin-bottom: 5px;
-}
-
-.card .button {
-    margin-top: 30px;
-    background-color: var(--pink-btn-links);
-    color: white;
-    text-decoration: none;
-    border: 2px solid transparent;
-    font-weight: bold;
-    padding: 7px 18px;
-    border-radius: 30px;
-    transition: .4s;
-}
-
-/*------------- Projects Section Ends --------------- */
-
-/*------------- Contact Me Section Starts --------------- */
-.contact-me {
-    width: 100%;
-    height: 50vh;
-    background-color: var(--purple-bg);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.contact-me p {
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 25px;
-}
-
-.contact-me .button-two {
-    background-color: var(--pink-btn-links);
-    color: white;
-    text-decoration: none;
-    border: 2px solid transparent;
-    font-weight: bold;
-    padding: 9px 20px;
-    border-radius: 30px;
-    transition: .4s;
-}
-/*------------- /Contact Me Section Ends --------------- */
-
-/*------------- Footer Starts --------------- */
-footer {
-    position: relative;
-    width: 100%;
-    height: 50vh;
-    background-color: var(--blue-bg);
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-
-footer p:nth-child(1) {
-    font-size: 20px;
-    color: white;
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-
-footer p:nth-child(2) {
-    color: white;
-    font-size: 14px;
-    width: 300px;
-    text-align: center;
-    line-height: 20px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.social {
-    display: flex;
-}
-
-.social a {
-    height: 45px;
-    display: flex;
-    align-items: center;
-    background: var(--pink-btn-links);
-    border-radius: 25%;
-    margin: 15px 5px;
-    color: white;
-    text-decoration: none;
-    font-size: 13px;
-}
-
-.social a:hover {
-    transform: scale(1.3);
-    transition: .3s;
-}
-
-.end {
-    position: absolute;
-    color: var(--pink-btn-links);
-    bottom: 35px;
-    font-size: 14px;
-}
-/*------------- /Footer Ends --------------- */   
-}
-
-@media(max-width: 700px) {
+@media(max-width: 608px){
     #home {
-        height: 150vh;
-        width: 100%;
-        background-color: var(--blue-bg)
+        height: 65vh;
     }
-    
-    nav {
-        display:grid;
-        grid-template-rows: 1fr;
-        align-items: center;
-        justify-content: center;
-        padding-top: 50px;
-        text-align: center;
-        margin-bottom: 0;    
-    }
-    
-    .logo {
+
+    .header .navbar {
         display: flex;
-        font-size: 25px;
-        letter-spacing: 1px;
-        text-align: center;
+        flex-direction: row;
         justify-content: center;
-        align-items: center;
-    }
-    
-    nav ul li {
-        padding: 3px 5px;
-        display: inline-flex;
-        text-align: center;
         align-items: center;
     }
 
-    nav ul li a {
-        display: inline-flex;
-    }
-    
-    #content{
-        display: grid;
-        grid-template-columns:max-content;
-        text-align: center;
-        height:max-content;
-    }
-    
-    h1 {
-        color: white;
-        margin: 20px;
-        font-size: 25px;
-    }
-    
-    h3 {
-        color: white;
-        font-size: 15px;
-        margin-bottom: 0;
-    }
-    
-    h4 {
-        color: #fcfc;
-        letter-spacing: 1px;
-        font-size: 13px;
-    }
-    
-    img {
-        border-radius: 25%;
-        width: 180px;
-        justify-self: center;
-        margin: 2rem;
-    }
-    
-    /*------------------ /Home Section Ends ----------------- */
-    
-    /*----------------- About Section Starts ---------------- */
-    .about {
-        width: 100%;
-        height: 95%;
-        padding: 100px auto;
-        background-color: var(--purple-bg);
+    .logo {
         display: inline-block;
+    }
+
+    .navbar ul li a {
+        font-size: 16px;
+    }
+
+    .menu {
+        display: flex;
         flex-wrap: wrap;
-        flex-direction: column-reverse;
-        text-align: center;
-        height:max-content;
-        justify-content: space-between;
-    }
-    
-    .about-text {
-        margin: 0;
-        width: 400px;
+        align-items: center;
+        justify-content: center;
         text-align: center;
     }
+
+    #container {
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    .content .text {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #projects {
+        height: 210vh;
+    }
     
+
+    .card {
+        width: 90%;
+        height: 60vh;
+    }
+
+    .card .button {
+        font-size: 14px;
+        font-weight: bold;
+        padding: 3px 7px;
+    }
+    
+    .card .button:hover {
+        background-color: transparent;
+        border: 2px solid var(--pink-btn-links);
+        cursor: pointer;
+    }
+    
+    .card h5 {
+        color: var(--pink-btn-links);
+        font-size: 25px;
+        margin: 10px auto;
+    }
+    
+    .pra {
+        font-size: 14x;
+        line-height: 16px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/*------------- Media Queries --------------*/
+/*------------- Media Queries --------------*/
+@media(max-width: 437px) {
+    /*------------- Footer Starts --------------- */
+    .logo {
+        font-size: 20px;
+    }
+
+    #home {
+        height: 70vh;
+    }
+
     .about-text h2 {
         font-size: 30px;
-        text-transform: capitalize;
-        margin-bottom: 30px;
     }
-    
+
     .about-text h5 {
-        letter-spacing: 1px;
         font-size: 25px;
-        margin-bottom: 10px;
-        text-transform: capitalize;
     }
     
     .about-text p {
-        color: #fcfc;
-        letter-spacing: 1px;
-        line-height: 15px;
-        font-size: 14px;
-        margin-bottom: 30px;
-        margin: 5px;
+        margin: 20px;
+        text-align: justify;
     }
-    
-    button {
-        background-color: var(--pink-btn-links);
-        color: white;
-        text-decoration: none;
-        border: 2px solid transparent;
-        font-weight: bold;
-        padding: 13px 30px;
-        border-radius: 30px;
-        transition: .4s;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        margin-left: -10%;
+
+    #projects {
+        height: 280vh;
     }
-    /*----------------- About Section Ends ---------------- */
-    
-    /*------------- Contact Me Section Starts --------------- */
-    .contact-me {
-        width: 100%;
-        height: 50vh;
-        background-color: var(--purple-bg);
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
+
+    h2 {
+        font-size: 30px;
+    }    
+
+    .card {
+        width: 90%;
+        height: 80vh;
     }
-    
-    .contact-me p {
-        color: white;
+
+    #contact-me p {
         font-size: 20px;
         font-weight: bold;
-        margin-bottom: 25px;
-        text-align: center;
+        margin-bottom: 20px;
     }
-    
-    .contact-me .button-two {
-        background-color: var(--pink-btn-links);
-        color: white;
-        text-decoration: none;
-        border: 2px solid transparent;
-        font-weight: bold;
-        padding: 9px 20px;
-        border-radius: 30px;
-        transition: .4s;
-    }
-    /*------------- /Contact Me Section Ends --------------- */
-}
 
-@media(max-width: 300px) {
-    
-
-    /*------------- Footer Starts --------------- */
     footer {
-        position: relative;
-        width: 100%;
-        height: 50vh;
-        background-color: var(--blue-bg);
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
     }
 
     footer p:nth-child(1) {
-        font-size: 20px;
+        font-size: 16px;
         color: white;
-        margin-bottom: 20px;
+        margin: 10px;
         font-weight: bold;
+        text-align: center;
+    }
+    
+    .social {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
-    footer p:nth-child(2) {
+    .social a {
+        margin: 10px;
         font-size: 12px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
     }
+}
+/*------------- Media Queries --------------*/
+/*------------- Media Queries --------------*/
+@media(max-width: 321px) {
+    #projects {
+        height: 260vh;
+    }
+
+    .card {
+        height: 78vh;
+    }
+
 }
