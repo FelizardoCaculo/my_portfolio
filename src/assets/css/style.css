@@ -298,6 +298,7 @@ footer p:nth-child(1) {
     color: white;
     text-decoration: none;
     font-size: 16px;
+    padding: 5px;
 }
 
 .social a:hover {
@@ -319,52 +320,7 @@ footer p:nth-child(1) {
 
 /*------------- Media Queries --------------*/
 
-/*------------- Media Queries --------------*/
-
-
-/*
-@media(max-width: 912px) {
-    #projects {
-        height: 70vh;
-    }
-
-    .card {
-        height: 18vh;
-    }
-
-    #contact-me {
-        height: 15vh;
-    }
-
-    footer {
-        height: 20vh;
-    }
-}
-*/
-
-/*------------- Media Queries --------------*/
-/*
-@media(max-width: 820px) {
-    #projects {
-        height: 80vh;
-    }
-
-    .card {
-        height: 22vh;
-    }
-
-    #contact-me {
-        height: 15vh;
-    }
-
-    footer {
-        height: 20vh;
-    }
-}
-*/
-
-
-/*------- Mobile Responsivity (Iphone SE)---------*/
+/*------- Mobile Responsivity (Iphone SE)------*/
 
 /*------------- Media Queries --------------*/
 
