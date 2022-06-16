@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,126 +16,129 @@
     <title>Felizardo Caculo</title>
 </head>
 <body>
-    <!----- Home Section start ----->
-    <div class="home">
 
-        <nav>
-            <h2 class="logo">Portfo<span>lio</span></h2>
-            <ul>
-                <li><a href="#.hero">Página Inicial</a></li>
-                <li><a href="#.about">Sobre</a></li>
-                <li><a href="#.projects">Meus Projectos</a></li>
-                <li><a href="#">Contacta-me</a></li>
-            </ul>
+    <header class="header">
+        <nav class="navbar">
+            <div>
+                <h2 class="logo">
+                    Portfo<span>lio</span>
+                </h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#home">Página-Inicial</a></li>
+                    <li><a href="#about">Sobre Mim</a></li>
+                    <li><a href="#projects">Meus Projectos</a></li>
+                    <li><a href="#contact-me">Contacta-me</a></li>
+                    <li><a href="./index.html">Inglês</a></li>
+                </ul>
+            </div>
         </nav>
+    </header>
 
-        <div class="content">
+    <main id="container">
+        <section id="home">
+
+            <div class="content">
+                <div class="image">
+                    <img src="/images/background.jpg" alt="Imagem de Perfil">
+                </div>
+                <div class="text">
+                    <h4>Hello, my name is</h4>
+                    <h1>Felizardo <span>Caculo</span></h1>
+                    <h3>I'am a Web Developer.</h3>
+                </div>
+            </div>    
+
+        </section>
+
+        <section id="about">
             <div class="image">
-                <img src="/images/background.jpg" alt="Imagem de Perfil">
+                <img src="/images/AboutSection.jpg" alt="Imagem da Secção About">
             </div>
-            <div class="text">
-                <h4>Olá Pessoal!</h4>
-                <h1>Felizardo <span>Caculo</span></h1>
-                <h3>Sou um Desenvolvedor/Programador Web.</h3>
+            <div class="about-text">
+                <h2>About Me</h2>
+                <h5>Web <span>Developer</span></h5>
+                <p>
+                    I am a front-end web developer. I can provide clean code and pixel perfect design.
+                    I also make animations. I also make the website more & more interactive with web animations.
+                    A responsive design makes your website accessible to all users, regardless of their device.
+                </p>
             </div>
-        </div>
-    </div>
-    <!----- /Home Section ends ----->
+        
+        </section>
 
-    <!----- About Section starts ----->
-    <section class="about">
-        <img src="/images/AboutSection.jpg" alt="Imagem da Secção About">
-        <div class="about-text">
-            <h2>Sobre o Felizardo</h2>
-            <h5>Desenvolvedor <span>Web</span></h5>
-            <p>
-                Eu sou um Desenvolvedor Web. I can provide clean code and pixel perfect design.
-                I also make animations. I also make the website more & more interactive with web animations.
-                A responsive design makes your website accessible to all users, regardless of their device.
-            </p>
-            <button type="button">Let's Talk</button>
-        </div>
-    
-    </section>
-    <!--------- /About Section ends -------->
+        <section id="projects">
 
-    <!----- My Projects Section starts ----->
-    <section class="projects">
-
-        <div class="title">
-            <h2>My Projects</h2>
-
-            <div class="box">
-                <div class="card">
-                    <h5>Portal de Cursos Online</h5>
-                    <div class="pra">
-                        <p>
-                            This is my first personal project, is a website built to help another Web developers like me.
-                            giving a place to start their roadmap to the FullStack web deveplopment, just like me. 
-                            This project will follow my own steps as a self tougth and will be on continuos deveplopment. I have created a Node js Server, and deployed the website on Heroku width Docker.
-                        </p><br>
-
-                        <p style="text-align: center;">
-                            <a class="button" target="_blank" href="https://portal-de-cursos-online-fc.herokuapp.com">Go To This Project</a>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <h5>Developer Finances</h5>
-                    <div class="pra">
-                        <p>
-                            This is a Web Aplication, built to help another developers and another people to 
-                            control their personal and professional Finances (Incomes, Expenses) and control
-                            the bills. is a study project developed on the "RocketSeat" course. I built the 
-                            same app to improve it making make some changes on my own and created my own web 
-                            server in Node JS, deployed it on Heroku with Docker.   
-                        </p><br>
-
-                        <p style="text-align: center;">
-                            <a class="button" target="_blank" href="https://developer-finances.herokuapp.com/">Go To This Project</a>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <h5>Countdown Landing Page</h5>
-                    <div class="pra">
-                        <!--
+            <div class="title">
+                <h2>My Projects</h2>    
+                <div class="box">
+                    <div class="card">
+                        <h5>Portal de Cursos Online</h5>
+                        <div class="pra">
                             <p>
-                            Every Website should be built with two primary goals: First, it needs
-                            to work across all devises. Secondly, it needs to be fast as possible.
+                                This is my first personal project, is a website built to help another Web developers like me.
+                                giving a place to start their roadmap to the FullStack web deveplopment, just like me. 
+                                This project will follow my own steps as a self tougth and will be on continuos deveplopment. I have created a Node js Server, and deployed the website on Heroku width Docker.
+                            </p><br>
+    
+                            <p style="text-align: center;">
+                                <a class="button" target="_blank" href="https://portal-de-cursos-online-fc.herokuapp.com">Go To This Project</a>
                             </p>
-                        -->
-
-                        <p>
-                            This is a Landing Page created for study purposes to implement a Countdown function in JavaScript
-                            it was crated by "Mr. Web Designer", I Studied the same projecto to make some changes on my own and created my own web server in Node JS, deployed it on Heroku with Docker.
-                        </p><br>
-
-                        <p style="text-align: center;">
-                            <a class="button" target="_blank" href="https://countdown-landingpage.herokuapp.com/">Go To This Project</a>
-                        </p>
+                        </div>
                     </div>
+    
+                    <div class="card">
+                        <h5>Developer Finances</h5>
+                        <div class="pra">
+                            <p>
+                                This is a Web Aplication, built to help another developers and another people to 
+                                control their personal and professional Finances (Incomes, Expenses) and control
+                                the bills. is a study project developed on the "RocketSeat" course. I built the 
+                                same app to improve it making make some changes on my own and created my own web 
+                                server in Node JS, deployed it on Heroku with Docker.   
+                            </p><br>
+    
+                            <p style="text-align: center;">
+                                <a class="button" target="_blank" href="https://developer-finances.herokuapp.com/">Go To This Project</a>
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <h5>Countdown Landing Page</h5>
+                        <div class="pra">
+                            <!--
+                                <p>
+                                Every Website should be built with two primary goals: First, it needs
+                                to work across all devises. Secondly, it needs to be fast as possible.
+                                </p>
+                            -->
+    
+                            <p>
+                                This is a Landing Page created for study purposes to implement a Countdown function in JavaScript
+                                it was crated by "Mr. Web Designer", I Studied the same projecto to make some changes on my own and created my own web server in Node JS, deployed it on Heroku with Docker.
+                            </p><br>
+    
+                            <p style="text-align: center;">
+                                <a class="button" target="_blank" href="https://countdown-landingpage.herokuapp.com/">Go To This Project</a>
+                            </p>
+                        </div>
+                    </div>
+    
                 </div>
-
             </div>
-        </div>
-    </section>
-    <!----- /Projects Section ends ----->
+        </section>
 
-    <!----- Contact Me Section starts ----->
-    <section class="contact-me">
-        <p>Let Me Get You A Beautiful Website</p>
-        <a href="#" class="button-two">Hire Me</a>
-    </section>
-    <!----- /Contact Me Section Ends ----->
+        <section id="contact-me">
+            <p>Let Me Get You A Beautiful Website</p>
+            <a href="mailto:felizardo1987@gmail.com" class="button-two">Hire Me</a>
+        </section>    
 
-    <!----- Footer Me Section Starts ----->
+    </main>
+
     <footer>
-        <p>
-            Felizardo Caculo
-        </p>
+
         <p>
             For getting in touch with me, please click on the link below to
             visit to my channels:
@@ -145,8 +148,9 @@
             <a href="#">Instagram</a>
             <a href="https://github.com/FelizardoCaculo" target="_blank">GitHub</a>
         </div>
-        <p class="end">CopyRigth By Felizardo Caculo</p>
+        <div class="end">
+            <p>Designed By Felizardo Caculo</p>
+        </div>
     </footer>
-    <!----- Footer Me Section Ends ----->
 </body>
 </html>
