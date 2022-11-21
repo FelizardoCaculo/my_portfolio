@@ -20,7 +20,7 @@ router.get('/', (req, res)=>{
 
 app.use(router);
 app.use('/.netlify/functions/server', router);
-//app.use('/', (req, res) => res.sendFile(path.join(__dirname + '/src/assets/pages/index.html')));
+app.use('/', (req, res) => res.sendFile(path.join(__dirname + '/src/assets/pages/index.html')));
 app.use(express.static(__dirname + '/src/assets'));
 
 module.exports = app;
