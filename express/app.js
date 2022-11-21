@@ -23,9 +23,5 @@ app.use('/.netlify/functions/server', router);
 //app.use('/', (req, res) => res.sendFile(path.join(__dirname + '/src/assets/pages/index.html')));
 app.use(express.static(__dirname + '/src/assets'));
 
-/*app.listen(process.env.PORT || 3000, ()=>{
-    console.log('SERVIDOR RODANDO!!!!')
-});
-*/
 module.exports = app;
 module.exports.handler = serverless(app);

@@ -2,7 +2,7 @@
   "name": "my_portfolio",
   "version": "1.0.0",
   "description": "This project is my personal repository bilt from scratch.",
-  "main": "sunction/app.js",
+  "main": "functions/app.js",
   "scripts": {
     "build": "netlify-lambda build express",
     "start": "nodemon app.js"
