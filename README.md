@@ -3,5 +3,4 @@ This project is my personal portfolio built from scratch with HTML5, CSS3 and a 
 
 Visit my Portfólio
 
-https://felizardocaculo-portfolio.herokuapp.com/
 https://felizardo-caculo-portfolio.netlify.app/
