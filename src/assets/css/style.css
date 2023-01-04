@@ -154,6 +154,7 @@ h4 {
     max-width: 980px;
     display: block;
     justify-content: center;
+    padding-inline: 2rem;
 }
 
 .image {
@@ -438,6 +439,12 @@ footer p:nth-child(1) {
         justify-content: center;
         text-align: center;
     }
+
+    .about-content {
+        top: 0;
+        width: 100%;
+        padding-inline: 2rem;
+    }
     
     .image {
         margin-top: 3rem;
@@ -452,7 +459,6 @@ footer p:nth-child(1) {
     }
         
     .paragraph {
-        padding: 2rem;
         padding-bottom: 3rem;
     }
     

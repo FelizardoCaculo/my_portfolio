@@ -12,11 +12,11 @@
 </head>
 <body>
 
-    <header class="header">
+    <header class="header-container">
         <nav class="navbar">
             <div>
                 <h2 class="logo">
-                    Portfo<span>lio</span>
+                    Portfó<span>lio</span>
                 </h2>
             </div>
             <div class="menu">
@@ -25,10 +25,12 @@
                     <li><a href="#about">Sobre Mim</a></li>
                     <li><a href="#projects">Meus Projectos</a></li>
                     <li><a href="#contact-me">Contacta me</a></li>
-                    <li><a href="/index.html">English</a></li>
                 </ul>
             </div>
         </nav>
+        <div class="btn-container">
+            <a href="/index.html">English</a>
+        </div>
     </header>
 
 
@@ -39,104 +41,81 @@
                 <img src="../images/background.jpg" alt="Imagem de Perfil">
             </div>
             <div class="text">
-                <h4>Olá Pessoal, Meu nome é</h4>
+                <h4>Olá! Meu nome é</h4>
                 <h1>Felizardo <span>Caculo</span></h1>
-                <h3>Eu sou um Desenvolvedor/Programador Web.</h3>
+                <h3>Eu sou um Desenvolvedor Web.</h3>
             </div>
         </div>    
 
     </section>
 
     <section id="about">
-        <div class="image">
-            <img src="../images/AboutSection.jpg" alt="Imagem da Secção About">
+        
+        <div class="about-content">
+            <div class="image">
+                <img src="../images/AboutSection.jpg" alt="Imagem da Secção About">
+            </div>
+            <div class="about-text">
+                <h2>Sobre Mim</h2>
+                <h5>Desenvolvedor <span>Web</span></h5>
+                
+                <div class="paragraph">
+                    <p>
+                        Como Desenvolvedor Web Front-End, Posso criar o modelo perfeito de um Website com animações e a interactividade para tornar o seu negócio (Produtos e Serviços) acessiveis para os seus parceiros económicos via internet com design responsivo acessível a todos usuários em qualquer dispositivo ligado a web.
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="about-text">
-            <h2>Sobre Mim</h2>
-            <h5>Desenvolvedor/Programador <span>Web</span></h5>
-            <p>
-                Como Desenvolvedor Web Front-End, Posso criar o modelo perfeito de um Website com animações e a interactividade para tornar o seu negócio (Produtos e Serviços) acessiveis para os seus parceiros económicos via internet com design responsivo acessível a todos usuários em qualquer dispositivo ligado a web.
-            </p>
-        </div>
-    
-<<<<<<< HEAD
-                            <p style="text-align: center;">
-                                <a class="button" target="_blank" href="https://portal-de-cursos-online-fc.onrender.com/">Clique para ver o Projecto</a>
-                            </p>
-                        </div>
-                    </div>
-    
-                    <div class="card">
-                        <h5>Guessing Number Game</h5>
-                        <div class="pra">
-                            <p>
-Está é uma aplicação web que criei usando HTML5, CSS3 e JavaScript no Front-End que gera um número aleatório entre 1 a 100, e o usuário tem que tentar adivinhar o número que o sistema escolheu em apenas 10 tentativas. Usei JavaScript para criar um servidor web com NodeJS/Express, e fiz o deploy em produção usando o Docker-Compose.
-
-                            </p><br>
-    
-                            <p style="text-align: center;">
-                                <a class="button" target="_blank" href="https://guessing-number-game-fc.onrender.com/">Clique para ver o Projecto</a>
-                            </p>
-                        </div>
-                    </div>
-    
-                    <div class="card">
-                        <h5>My Social Networks</h5>
-                        <div class="pra">
-                            <p>
-                                Esta é uma aplicação web muito simples mas muito útil que criei com propósito de estudos e para disponibilizar todos links das minhas redes sociais foi desenvolvida usando HTML5 e CSS3 no Front-End e JavaScript para criar um servidor web com NodeJS/Express, o deploy foi feito usando Docker-Compose.                            </p><br>
-    
-                            <p style="text-align: center;">
-                                <a class="button" target="_blank" href="https://social-networks-fc.onrender.com/">Clique para ver o Projecto</a>
-                            </p>
-                        </div>
-                    </div>
-    
-=======
     </section>
 
     <section id="projects">
 
-        <div class="title">
+        <div class="projects-content">
             <h2>Meus Projectos</h2>    
             <div class="box">
                 <div class="card">
                     <h5>Portal de Cursos Online</h5>
-                    <div class="pra">
-                        <p>
-                            Este é o meu primeiro projecto pessoal, estou desenvolvendo este Website para disponibilizar cursos gratuitos para todos interessados em estudar/formar-se ou conhecer a programação web disponibilizando uma trilha/caminho para se tornar um Programador Web FullStack.
-                        </p><br>
-
-                        <p style="text-align: center;">
-                            <a class="button" target="_blank" href="https://portal-de-cursos-online-fc.herokuapp.com">Clique para ver o Projecto</a>
-                        </p>
+                    <div class="app">
+                        <div class="app-description">
+                            <p>
+                                Este é o meu primeiro projecto pessoal, estou desenvolvendo este Website para disponibilizar cursos gratuitos para todos interessados em estudar/formar-se ou conhecer a programação web disponibilizando uma trilha/caminho para se tornar um Programador Web FullStack.
+                            </p><br>
+    
+                            <p style="text-align: center;">
+                                <a class="button" target="_blank" href="https://portal-de-cursos-online-fc.onrender.com/">Ver Website</a>
+                            </p>
+                        </div>
                     </div>
->>>>>>> 1b4ed55 (Alterando a primeira sessãoterando)
+                </div>
                 </div>
 
                 <div class="card">
-                    <h5>Developer Finances</h5>
-                    <div class="pra">
-                        <p>
-                            Esta é uma aplicação web, criada para o registo e gestão de finanças. É um projecto de estudo para aplicar na prática os conhecimentos adquiridos no curso da "Rocketseat". Estou customizando para disponibilizar a comunidade afim de ser usada gratuitamente, pelo que todos créditos vão para ela.
-                        </p><br>
-
-                        <p style="text-align: center;">
-                            <a class="button" target="_blank" href="https://developer-finances.herokuapp.com/">Clique para ver o Projecto</a>
-                        </p>
+                    <h5>Guessing Number Game</h5>
+                    <div class="app">
+                        <div class="app-description">
+                            <p>
+                                Está é uma aplicação web que criei usando HTML5, CSS3 e JavaScript no Front-End que gera um número aleatório entre 1 a 100, e o usuário tem que tentar adivinhar o número que o sistema escolheu em apenas 10 tentativas. Usei JavaScript para criar um servidor web com NodeJS/Express, e fiz o deploy em produção usando o Docker-Compose.
+    
+                            </p><br>
+    
+                            <p style="text-align: center;">
+                                <a class="button" target="_blank" href="https://guessing-number-game-fc.onrender.com/">Go To This Project</a>
+                            </p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="card">
-                    <h5>Countdown Landing Page</h5>
-                    <div class="pra">
-                        <p>
-                            Esta é uma Landing Page criada para fins de estudo na qual é feita uma Contagem Regressiva baseada num tutorial criado pelo "Mr. Web Designer", está sendo personalizada  para a contagem regressiva do meu aniversário.
-                        </p><br>
-
-                        <p style="text-align: center;">
-                            <a class="button" target="_blank" href="https://countdown-landingpage.herokuapp.com/">Clique para ver o Projecto</a>
-                        </p>
+                    <h5>My Social Networks</h5>
+                    <div class="app">
+                        <div class="app-desciption">
+                            <p>
+                                Esta é uma aplicação web muito simples mas muito útil que criei com propósito de estudos e para disponibilizar todos links das minhas redes sociais foi desenvolvida usando HTML5 e CSS3 no Front-End e JavaScript para criar um servidor web com NodeJS/Express, o deploy foi feito usando Docker-Compose.                            </p><br>
+    
+                            <p style="text-align: center;">
+                                <a class="button" target="_blank" href="https://social-networks-fc.onrender.com/">Ver Website</a>
+                            </p>
+                        </div>
                     </div>
                 </div>
 
@@ -155,8 +134,8 @@ Está é uma aplicação web que criei usando HTML5, CSS3 e JavaScript no Front-
             Saiba mais sobre mim, visitando minhas redes sociais:
         </p>
         <div class="social">
-            <a href="https://social-networks-fc.onrender.com/" target="_blank">Personal</a>
-            <a href="https://redes-sociais-portal-de-cursos-online-fc.onrender.com/" target="_blank">Professional</a>
+            <a href="https://social-networks-fc.onrender.com/" target="_blank">Pessoal</a>
+            <a href="https://redes-sociais-portal-de-cursos-online-fc.onrender.com/" target="_blank">Profissional</a>
             <a href="https://github.com/FelizardoCaculo" target="_blank">GitHub</a>
         </div>
         <div class="end">
@@ -164,6 +143,6 @@ Está é uma aplicação web que criei usando HTML5, CSS3 e JavaScript no Front-
         </div>
     </footer>
 
-    <script src="/javascript/main.js"></script>
+    <script src="../javascript/main.js"></script>
 </body>
 </html>
