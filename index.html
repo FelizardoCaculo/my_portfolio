@@ -1,57 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="/src/assets/images/image18.jpg" type="image/x-icon">
     <title>Felizardo Caculo</title>
 </head>
 <body>
 
     <header class="header-container">
         <nav class="navbar">
-            
             <div>
                 <h2 class="logo">
-                    My Portfo<span>lio</span>
+                    Portfo<span>lio</span>
                 </h2>
             </div>
             <div class="menu">
                 <ul>
-                    
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact-me">Contact</a></li>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#projects">My Projects</a></li>
+                    <li><a href="#contact-me">Contact me</a></li>
                 </ul>
-            </div>        
+            </div>
+
         </nav>
-
         <div class="btn-container">
-            <a class="btn" href="/src/assets/pages/portuguese.html">Português</a>
+            <a href="/src/assets/pages/portuguese.html">Português</a>
         </div>
-
     </header>
 
-    <section id="home">
+    <main id="container">
+        <section id="home">
 
-        <div class="content">
-            <div class="image">
-                <img src="/src/assets/images/image18.jpg" alt="Imagem de Perfil">
-            </div>
-            <div class="text">
-                <h4>Hello, my name is</h4>
-                <h1>Felizardo <span>Caculo</span></h1>
-                <h3>I'am a Web Developer.</h3>
-            </div>
-        </div>    
+            <div class="content">
+                <div class="image">
+                    <img src="/src/assets/images/background.jpg" alt="Imagem de Perfil">
+                </div>
+                <div class="text">
+                    <h4>Hello, my name is</h4>
+                    <h1>Felizardo <span>Caculo</span></h1>
+                    <h3>I'am a Web Developer.</h3>
+                </div>
+            </div>    
 
-    </section>
+        </section>
 
 <<<<<<< HEAD
             <div class="title">
@@ -109,47 +106,46 @@
                     </div>
     
 =======
-    <section id="about">
+        <section id="about">
 
-        <div class="about-content">
-            <div class="image">
-                <img src="/src/assets/images/AboutSection.jpg" alt="Imagem da Secção About">
-            </div>
-            <div class="about-text">
-                <h2>About Me</h2>
-                <h5>Web <span>Developer</span></h5>
-                <div class="paragraph">
-                    <p>
-                        I am a front-end web developer. I can provide clean code and pixel perfect design.
-                        I also make animations. I also make the website more & more interactive with web animations.
-                        A responsive design makes your website accessible to all users, regardless of their device.
-                    </p>
+            <div class="about-content">
+                <div class="image">
+                    <img src="/src/assets/images/AboutSection.jpg" alt="Imagem da Secção About">
+                </div>
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <h5>Web <span>Developer</span></h5>
+
+                    <div class="paragraph">
+                        <p>
+                            I am a front-end web developer. I can provide clean code and pixel perfect design.
+                            I also make animations. I also make the website more & more interactive with web animations.
+                            A responsive design makes your website accessible to all users, regardless of their device.
+                        </p>
+                    </div>
+
                 </div>
             </div>
-        </div>
-    
-    </section>
+        
+        </section>
 
-    <section id="projects">
+        <section id="projects">
 
-        <div class="projects-content">
-            <h2>My Projects</h2>    
-            <div class="box">
-                <div class="card">
-                    <h5>Portal de Cursos Online</h5>
-                    <div class="app">
-
-                        <div class="app-description">
+            <div class="projects-content">
+                <h2>My Projects</h2>    
+                <div class="box">
+                    <div class="card">
+                        <h5>Portal de Cursos Online</h5>
+                        <div class="app">
                             <p>
                                 This is my first personal project, is a website built to help another Web developers like me.
                                 giving a place to start their roadmap to the FullStack web deveplopment, just like me. 
-                                This project will follow my own steps as a self tougth and will be on continuos deveplopment. It is built using HTML5, CSS3 and used JavaScript to create a web server in Nodejs/Express, and deployed using Docker-Compose.
-                            </p><br>
-                        </div>
+                                This project will follow my own steps as a self tougth and will be on continuos deveplopment. And used JavaScript to create a web server in NodeJS/Express, deployed it using Docker-Compose.
 
-                        <div class="app-button">
+                            </p><br>
+    
                             <p style="text-align: center;">
-                                <a class="button" target="_blank" href="https://portal-de-cursos-online-fc.onrender.com/">Go to WebApp</a>
+                                <a class="button" target="_blank" href="https://portal-de-cursos-online-fc.onrender.com/">Go To This Project</a>
                             </p>
     
                         </div>
@@ -164,46 +160,40 @@
 
                         <div class="app-description">
                             <p>
-                                This is a Web Aplication, that i've built using HTML5, CSS3 and vanilla JavaScript on Front-End that generates a random number, starting from 1 to 100 and the user tries to guess it in 10 possibilities. I also used JavaScript to create a web server in Nodejs/Express and deployed it using Docker-Compose.
+                                This is a Web Aplication, In this project i've built using HTML5, CSS3 and JavaScript on Front-End that generate a random number starting from 1 to 100, and the user tries to guess it in 10 possibilities.
+                                I also used JavaScript to create a web server in NodeJS/Express, and deployed it using Docker-Compose.
+   
                             </p><br>
-                        </div>
-
-                        <div class="app-button">
+    
                             <p style="text-align: center;">
-                                <a class="button" target="_blank" href="https://developer-finances.herokuapp.com/">Go To This Project</a>
+                                <a class="button" target="_blank" href="https://guessing-number-game-fc.onrender.com/">Go To This Project</a>
                             </p>
                         </div>
                     </div>
-                </div>
-
-                <div class="card">
-                    <h5>My Social Networks</h5>
-                    <div class="app">
-                        
-                        <div class="app-description">
+    
+                    <div class="card">
+                        <h5>My Social Networks</h5>
+                        <div class="app">
                             <p>
-                                This a very simple but usefull application created to join the links of all my social networks, it was developed using only HTML5, CSS3 on Front-End, I also used JavaScript to create a web server in Nodejs/Express, and deployed it using Docker-Compose.
+                                This a very simple but usefully application created for study purposes to join all the links for my social networks it was developed using only HTML5, CSS3 and JavaScript to create a web server in NodeJS/Express, deployed it using Docker-Compose.
                             </p><br>
-                        </div>
-
-                        <div class="app-button">
+    
                             <p style="text-align: center;">
-                                <a class="button" target="_blank" href="https:social-networks-fc.onrender.com/">Go To This Project</a>
+                                <a class="button" target="_blank" href="https://social-networks-fc.onrender.com/">Go To This Project</a>
                             </p>
                         </div>
-
                     </div>
+    
                 </div>
-
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact-me">
-        <p>Let Me Get You A Beautiful Website</p>
-        <a href="mailto:felizardo1987@gmail.com" class="button-two">Hire Me</a>
-    </section>    
+        <section id="contact-me">
+            <p>Let Me Get You A Beautiful Website</p>
+            <a href="mailto:felizardo1987@gmail.com" class="button-two">Hire Me</a>
+        </section>    
 
+    </main>
 
     <footer>
 
@@ -237,5 +227,7 @@
         </div>
         
     </footer>
+
+    <script src="/src/assets/javascript/main.js"></script>
 </body>
 </html>

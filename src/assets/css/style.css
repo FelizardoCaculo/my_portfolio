@@ -97,8 +97,8 @@ a:hover {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: yellow;
     margin: auto;
+    padding: 2rem;
 }
 
 .image img {
@@ -114,10 +114,10 @@ img {
 }
 
 .text {
-    display: block;
+    display: grid;
     flex-direction: column;
-    margin: auto;
     text-align: center;
+    gap: 1rem;
 }
 
 h1 {
@@ -151,7 +151,7 @@ h4 {
 }
 
 .about-content {
-    width: min(80vw, 980px);
+    max-width: 980px;
     display: block;
     justify-content: center;
 }
@@ -175,13 +175,13 @@ h4 {
 .about-text h5 {
     margin-top: 1rem;
     font-size: 2rem;
+    padding-bottom: 2rem;
 }
 
 .paragraph {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    font-size: 1rem;
     justify-content: center;
     text-align: justify;
 }
@@ -212,7 +212,6 @@ h4 {
     box-sizing: content-box;
     width: min(80vw, 980px);
     padding: 0;
-    background-color: gray;
 }
 
 .projects-content h2 {
@@ -220,7 +219,6 @@ h4 {
     color: white;
     font-size: 3rem;
     text-align: center;
-    background-color: yellow;
 }
 
 .box {
@@ -330,9 +328,10 @@ h4 {
 /*------------- Footer Starts --------------- */
 
 footer {
+    padding: 2rem;
     width: 100%;
     display: block;
-    height: 40vh;
+    height: max-content;
     background-color: var(--blue-bg);
 }
 
@@ -349,31 +348,34 @@ footer {
 }
 
 footer p:nth-child(1) {
-    font-size: 25px;
+    font-size: 1.3rem;
     color: white;
     font-weight: bold;
     text-align: center;
     margin: 0 auto;
+    padding-bottom: 1rem;
 }
 
 .social {
     display: grid;
     grid-template-rows: repeat(1, 1fr);
-    row-gap: 10px;
+    row-gap: 1rem;
     justify-content: center;
     text-align: center;
     margin: 0 auto;
+    padding-bottom: 2rem;
+
 }
 
 .social a {
-    height: 20px;
+    height: max-content;
     background: var(--pink-btn-links);
     border-radius: 25%;
     margin: 0;
     color: white;
     text-decoration: none;
-    font-size: 16px;
-    padding: 5px;
+    font-size: 1rem;
+    padding: 0.2rem;
 }
 
 .social a:hover {
@@ -386,7 +388,7 @@ footer p:nth-child(1) {
 }
 
 .end p:nth-child(1) {
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: bold;
     text-align: center;
     color: var(--pink-btn-links);
@@ -396,7 +398,7 @@ footer p:nth-child(1) {
 
 
 /*====== Media Queries ======*/
-@media(max-width: 570px) {
+@media(max-width: 590px) {
     .navbar {
         width: 100%;
         padding-block: 0.2rem;
@@ -432,7 +434,7 @@ footer p:nth-child(1) {
     #about {
         background-color: var(--purple-bg);
         display: flex;
-        height: 100vh;
+        height: max-content;
         flex-wrap: wrap;
         justify-content: center;
         text-align: center;
@@ -451,42 +453,12 @@ footer p:nth-child(1) {
     }
         
     .paragraph {
-        padding-bottom: 2rem;
+        padding: 2rem;
+        padding-bottom: 3rem;
     }
     
     .paragraph p {
         margin-top: 2rem;
-    }
-    
-    footer {
-        padding: 2rem;
-        width: 100%;
-        height: max-content;
-    }
-        
-    footer p:nth-child(1) {
-        font-size: 1.3rem;
-        padding-bottom: 1rem;
-    }
-    
-    .social {
-        row-gap: 1rem;
-        padding-bottom: 2rem;
-        flex-wrap: wrap;
-    }
-    
-    .social a {
-        height: max-content;
-        font-size: 1rem;
-        padding: 0.2rem;
-    }
-    
-    .end {
-        display: flex;
-    }
-    
-    .end p:nth-child(1) {
-        font-size: 1rem;
     }
 }
 
