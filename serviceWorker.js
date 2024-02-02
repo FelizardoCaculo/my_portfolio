@@ -6,6 +6,5 @@ const assets = [
     "/src/assets/images/image20.webp",
     "/src/assets/css/style.css",
     "/src/assets/javascript/main.js",
-    "/index.html",
-    "/manifest.json"
+    "/index.html"
 ]
