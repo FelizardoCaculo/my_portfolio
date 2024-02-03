@@ -21,7 +21,7 @@ const assets = [
 this.addEventListener("install", (event) => {
     event.waitUntil(
         caches.open(myPortfolioFc).then((cache) => {
-            return cache.addAll(assets);
+            return Cache.addAll(assets);
         })
     );
 });
