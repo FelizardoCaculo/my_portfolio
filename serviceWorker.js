@@ -6,11 +6,11 @@ const assets = [
     "/src/assets/images/image20.webp",
     "/src/assets/icons/icon-72x72.png",
     "/src/assets/icons/icon-96x96.png",
-    "/src/assets/icons/icon-72x72.png",
     "/src/assets/icons/icon-128x128.png",
     "/src/assets/icons/icon-144x144.png",
     "/src/assets/icons/icon-152x152.png",
     "/src/assets/icons/icon-192x192.png",
+    "/src/assets/icons/maskable_icon.png",
     "/src/assets/icons/icon-384x384.png",
     "/src/assets/icons/icon-512x512.png",
     "/manifest.json",
@@ -21,7 +21,7 @@ const assets = [
 this.addEventListener("install", (event) => {
     event.waitUntil(
         caches.open(myPortfolioFc).then((cache) => {
-            return Cache.addAll(assets);
+            return cache.addAll(assets)
         })
     );
 });

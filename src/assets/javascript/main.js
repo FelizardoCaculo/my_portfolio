@@ -5,12 +5,12 @@ alert(`${portuguese}\nClique o botão (ok) para Fechar Essa Menssagem! \n\n${eng
 navigator.serviceWorker.register('/serviceWorker.js').then(registration => {
     console.log('Service Worker resgistered');
     if(registration.installing){
-        registration.installing.postMessageMessage('Hi from your installing page');
-    } else [
+        registration.installing.postMessage('Hi from your installing page');
+    } else {
         err => {
             console.error('installing the worker failed!', err);
         }
-    ]
+    }
 });
 if('serviceWorker' in navigator){
     window.addEventListener('load', function() {
